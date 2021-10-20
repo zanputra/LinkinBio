@@ -76,21 +76,6 @@ span{
     margin: 0 5vw;
 }
 
-.container-header{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    padding: 2rem;
-}
-
-.container .container-header p{
-    font-size: 2rem;
-}
-
-.container-header img{
-    max-width: 500px;
-    height: auto;
-}
-
 .title-text{
     padding: 0 2rem;
 }
@@ -135,6 +120,25 @@ main {
     border-radius: 10rem;
 }
 /* header */
+
+/* container header */
+
+.container-header{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.container .container-header p{
+    font-size: 2rem;
+}
+
+.container-header img{
+    max-width: 100vw;
+    height: auto;
+}
+
+/* container header */
+
 
 /* carousel */
 
@@ -314,7 +318,7 @@ footer .footer .rights a{
     }
 
     main .container .container-header{
-        grid-template-columns: repeat(1, 1fr);
+        grid-template-columns: repeat(auto, 1fr);
         justify-content: center;
         text-align: center;
     }
