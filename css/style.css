@@ -1,4 +1,4 @@
-@import url(../CSS/fonts.css);
+@import url(../css/fonts.css);
 
 html, body{
     margin:0%;
@@ -149,7 +149,7 @@ main .crsl-acc .crsl-content{
     margin: 3rem 2rem;
     box-shadow: 0 15px 20px rgba(0,0,0,0.2);
     background-color: white;
-    padding-bottom: 1rem;
+    padding: 1rem 0;
 }
 
 main .crsl-acc .crsl-header{
@@ -296,7 +296,6 @@ footer .footer .rights a{
 
     main .container .container-header{
         grid-template-columns: repeat(1, 1fr);
-        padding: 2rem;
         justify-content: center;
         text-align: center;
     }
