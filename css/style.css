@@ -17,11 +17,11 @@ html, body{
     --Timberwolf: #DDD5D0;
 
     /* Font Family */
-    --Ubuntu: "Ubuntu", sans-serif;
-    --Poppins: "Poppins", sans-serif;
-    --PT_Sans: "PT_Sans", sans-serif;
-    --Quicksand: "Quicksand", cursive;
-    --Yaldevi: "Yaldevi", sans-serif;
+    --Ubuntu: 'Ubuntu', sans-serif;
+    --Poppins: 'Poppins', sans-serif;
+    --PT_Sans: 'PTSans-Regular', sans-serif;
+    --Quicksand: 'Quicksand', sans-serif;
+    --Yaldevi: 'Yaldevi', sans-serif;
 }
 /* ------------x Variables x--------- */
 
@@ -41,7 +41,7 @@ a{
 
 
 h3{
-    font-family: var(--PT_Sans);
+    font-family: var(--Poppins);
     font-size: 1.3rem;
 }
 
@@ -265,6 +265,10 @@ footer .footer .container h2{
     color: white;
 }
 
+footer .footer .container{
+    color: grey;
+}
+
 footer .footer .rights{
     justify-content: center;
     font-family: var(--PT_Sans);
@@ -292,6 +296,7 @@ footer .footer .rights a{
 
     main .container .container-header{
         grid-template-columns: repeat(1, 1fr);
+        padding: 2rem;
         justify-content: center;
         text-align: center;
     }
