@@ -25,12 +25,25 @@
 </head>
 <body>
     <nav class="nav">
-        <div class="nav-brand">
-            <a href="#">
-                LinkinBio
-            </a>
+        <div class="nav-menu flex-row">
+            <div class="nav-logo">
+                <a href="#">LinkinBio</a>
+            </div>
+            <div>
+                <ul class="nav-items">
+                    <li class="nav-link"><a href="#about">About</a></li>
+                    <li class="nav-link"><a href="#portfolio">Portfolios</a></li>
+                    <li class="nav-link"><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="nav-toggle">
+                <div class="toggle-icon">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
         </div>
     </nav>
+
     <main>
     <!---- Header ---->
 
@@ -39,8 +52,13 @@
             <div class="header-title">
                 <p>Hi, My Name is</p>
                 <h1>Fauzan Harlyanto Putra.</h1>
-                <h1>I love to see and create beautiful designs.</h1>
-                <p>I'm a computer science student that studies computer science-related-topics like big data, artificial intelligence, and data mining. Also, I'm interested in designs</p>
+                <h1 class="under-name">I love to see and create beautiful designs.</h1>
+                <div class="h-title-text">
+                    <p>
+                        I'm a computer science student that studies computer science-related-topics like big data, artificial intelligence, and data mining. Also, I'm interested in designs
+                    </p>
+                </div>
+                
             </div>
         </div>
         
@@ -51,232 +69,263 @@
     <!------ Body ------>
     <section class=body-sec>
 
-        <div class="about-me">
-            <div class="container">
-                <h2>About Me</h2>
-                <div class="container-header">
-                    <p>
-                        I'm a computer science student in Bina Nusantara University. I'm interested in Front End Development, UI/UX Design, and Database. Currently, I'm learning Geographical Information System, Data Mining, Compilation Techniques, Web Programming, and Mobile Programming as well, in this case Android-based Mobile Software.
-                    </p>
-                    <div class="header-img">
-                        <img src="./assets/profile-pic.png" alt="">
+        <a id="about">
+            <div class="about-me">
+                <div class="container">
+                    <h2>About Me</h2>
+                    <div class="container-header">
+                        <div class="ch-text">
+                            <p>
+                                I'm a computer science student in Bina Nusantara University. I'm interested in Front End Development, UI/UX Design, and Database. Currently, I'm learning Geographical Information System, Data Mining, Compilation Techniques, Web Programming, and Mobile Programming as well, in this case Android-based Mobile Software.
+                            </p>
+                        </div>
+                        <div class="header-card">
+                            <div class="header-card-content">
+                                <div class="header-card-img">
+                                    <img src="./assets/profile-pic.png" alt="">
+                                </div>
+                                <div class="header-card-tech">
+                                    <h2>Here are technologies that I have studied with</h2>
+                                    <div class="tech flex-row">
+                                        <ul>
+                                            <li><p> > C/C++</p></li>
+                                            <li><p> > Java</p></li>
+                                            <li><p> > HTML</p></li>
+                                            <li><p> > CSS</p></li>
+                                            <li><p> > JavaScript</p></li>
+                                        </ul>
+                                        <ul>
+                                            <li><p> > R</p></li>
+                                            <li><p> > SQL</p></li>
+                                            <li><p> > Linux</p></li>
+                                            <li><p> > PHP</p></li>
+                                            <li><p> > Python</p></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
+        </a>
 
-        <div class="professionals"> <!--LinkedIn, Email, Github, Hackerrank-->
-            <div class="container">
-                <h2>Professinal Accounts And Portfolios</h2>
-                <div class="container-header">
-                    <div class="ch-text" data-aos="fade-right" data-aos-delay="200">
-                        <p>
-                            Professional Social Medias like LinkedIn or Hackerrank and My Portfolios are in here, from UI Design in Figma, to Codes in GitHub
-                        </p>
-                    </div>
-                    <div class="ch-illustro" data-aos="fade-left" data-aos-delay="200">
-                        <img src="./assets/illustrations/illustro-work.png" alt="">
-                    </div>
-                </div>
-                
-                <div class="owl-carousel owl-theme crsl-acc">
-                    
-                    <div class="crsl-content" data-aos="fade-right" data-aos-delay="200"> <!--Linkedin-->
-                        <div class="crsl-header">
-                            <div class="cover">
-                                <img src="./assets/socials/LinkedIn.png" alt="cover-pic">
-                            </div>
-                            <div class="profile">
-                                <img src="./assets/profile-pic.png" alt="profile-pic">
-                            </div>
+        <a id="portfolio">
+            <div class="professionals"> <!--LinkedIn, Email, Github, Hackerrank-->
+                <div class="container">
+                    <h2>Professinal Accounts And Portfolios</h2>
+                    <div class="container-header">
+                        <div class="ch-text" data-aos="fade-right" data-aos-delay="200">
+                            <p>
+                                Professional Social Medias like LinkedIn or Hackerrank and My Portfolios are in here, from UI Design in Figma, to Codes in GitHub
+                            </p>
                         </div>
-                        <div class="crsl-body">
-                            <div class="title-text">
-                                <h3>LinkedIn</h3>
-                                <p>Connect with me on LinkedIn</p>
-                            </div> 
-                            <button class="btn btn-crsl" onclick="location.href='https://www.linkedin.com/in/fauzan-harlyanto-putra-a800a61a5/';">
-                                Connect <i class="fab fa-linkedin"></i>
-                            </button>
-                        </div>
-                    </div>
-                    <div class="crsl-content" data-aos="fade-in" data-aos-delay="200"> <!--E-mail-->
-                        <div class="crsl-header">
-                            <div class="cover">
-                                <img src="./assets/socials/E-mail.png" alt="cover-pic">
-                            </div>
-                            <div class="profile">
-                                <img src="./assets/profile-pic2.png" alt="profile-pic">
-                            </div>
-                        </div>
-                        <div class="crsl-body">
-                            <div class="title-text">
-                                <h3>E-mail</h3>
-                                <p>Stay in touch through E-mail</p>
-                            </div> 
-                            <button class="btn btn-crsl"  onclick="location.href='mailto:fauzan.putra002@binus.ac.id';">
-                                Compose <i class="fas fa-paper-plane"></i>
-                            </button>
-                        </div>
-                    </div>
-                    <div class="crsl-content" data-aos="fade-left" data-aos-delay="200"> <!--Github-->
-                        <div class="crsl-header">
-                            <div class="cover">
-                                <img src="./assets/socials/Github.png" alt="cover-pic">
-                            </div>
-                            <div class="profile">
-                                <img src="./assets/profile-pic2.png" alt="profile-pic">
-                            </div>
-                        </div>
-                        <div class="crsl-body">
-                            <div class="title-text">
-                                <h3>GitHub</h3>
-                                <p>Check my GitHub repositories!</p>
-                            </div>
-                            <button class="btn btn-crsl" onclick="location.href='https://github.com/zanputra';">
-                                Github <i class="fab fa-github"></i>
-                            </button>
-                        </div>
-                    </div>
-                    <div class="crsl-content" data-aos="fade-in" data-aos-delay="200"> <!--Hackerrank-->
-                        <div class="crsl-header">
-                            <div class="cover">
-                                <img src="./assets/socials/Hackerrank.png" alt="cover-pic">
-                            </div>
-                            <div class="profile">
-                                <img src="./assets/profile-pic2.png" alt="profile-pic">
-                            </div>
-                        </div>
-                        <div class="crsl-body">
-                            <div class="title-text">
-                                <h3>Hackerrank</h3>
-                                <p>Visit my Hackerrank account here!</p>
-                            </div> 
-                            <button class="btn btn-crsl" onclick="location.href='https://www.hackerrank.com/fauzan_hputra';">
-                                Let's Go <i class="fab fa-hackerrank"></i>
-                            </button>
-                        </div>
-                    </div>
-                    <div class="crsl-content" data-aos="zoom-in" data-aos-delay="500"> <!--Figma-->
-                        <div class="crsl-header">
-                            <div class="cover">
-                                <img src="./assets/socials/Figma.png" alt="cover-pic">
-                            </div>
-                            <div class="profile">
-                                <img src="./assets/hobby-logo/figma.png" alt="profile-pic">
-                            </div>
-                        </div>
-                        <div class="crsl-body">
-                            <div class="title-text">
-                                <h3>Figma</h3>
-                                <p>Check my UI/UX Portfolios here!</p>
-                            </div> 
-                            <button class="btn btn-crsl" onclick="location.href='https://www.figma.com/@fauzanharlyanto';">
-                                Add <i class="fab fa-figma"></i>
-                            </button>
+                        <div class="ch-illustro" data-aos="fade-left" data-aos-delay="200">
+                            <img src="./assets/illustrations/illustro-work.png" alt="">
                         </div>
                     </div>
                     
+                    <div class="owl-carousel owl-theme crsl-acc">
+                        
+                        <div class="crsl-content" data-aos="fade-right" data-aos-delay="200"> <!--Linkedin-->
+                            <div class="crsl-header">
+                                <div class="cover">
+                                    <img src="./assets/socials/LinkedIn.png" alt="cover-pic">
+                                </div>
+                                <div class="profile">
+                                    <img src="./assets/profile-pic.png" alt="profile-pic">
+                                </div>
+                            </div>
+                            <div class="crsl-body">
+                                <div class="title-text">
+                                    <h3>LinkedIn</h3>
+                                    <p>Connect with me on LinkedIn</p>
+                                </div> 
+                                <button class="btn btn-crsl" onclick="location.href='https://www.linkedin.com/in/fauzan-harlyanto-putra-a800a61a5/';">
+                                    Connect <i class="fab fa-linkedin"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="crsl-content" data-aos="fade-in" data-aos-delay="200"> <!--E-mail-->
+                            <div class="crsl-header">
+                                <div class="cover">
+                                    <img src="./assets/socials/E-mail.png" alt="cover-pic">
+                                </div>
+                                <div class="profile">
+                                    <img src="./assets/profile-pic2.png" alt="profile-pic">
+                                </div>
+                            </div>
+                            <div class="crsl-body">
+                                <div class="title-text">
+                                    <h3>E-mail</h3>
+                                    <p>Stay in touch through E-mail</p>
+                                </div> 
+                                <button class="btn btn-crsl"  onclick="location.href='mailto:fauzan.putra002@binus.ac.id';">
+                                    Compose <i class="fas fa-paper-plane"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="crsl-content" data-aos="fade-left" data-aos-delay="200"> <!--Github-->
+                            <div class="crsl-header">
+                                <div class="cover">
+                                    <img src="./assets/socials/Github.png" alt="cover-pic">
+                                </div>
+                                <div class="profile">
+                                    <img src="./assets/profile-pic2.png" alt="profile-pic">
+                                </div>
+                            </div>
+                            <div class="crsl-body">
+                                <div class="title-text">
+                                    <h3>GitHub</h3>
+                                    <p>Check my GitHub repositories!</p>
+                                </div>
+                                <button class="btn btn-crsl" onclick="location.href='https://github.com/zanputra';">
+                                    Github <i class="fab fa-github"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="crsl-content" data-aos="fade-in" data-aos-delay="200"> <!--Hackerrank-->
+                            <div class="crsl-header">
+                                <div class="cover">
+                                    <img src="./assets/socials/Hackerrank.png" alt="cover-pic">
+                                </div>
+                                <div class="profile">
+                                    <img src="./assets/profile-pic2.png" alt="profile-pic">
+                                </div>
+                            </div>
+                            <div class="crsl-body">
+                                <div class="title-text">
+                                    <h3>Hackerrank</h3>
+                                    <p>Visit my Hackerrank account here!</p>
+                                </div> 
+                                <button class="btn btn-crsl" onclick="location.href='https://www.hackerrank.com/fauzan_hputra';">
+                                    Let's Go <i class="fab fa-hackerrank"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="crsl-content" data-aos="zoom-in" data-aos-delay="500"> <!--Figma-->
+                            <div class="crsl-header">
+                                <div class="cover">
+                                    <img src="./assets/socials/Figma.png" alt="cover-pic">
+                                </div>
+                                <div class="profile">
+                                    <img src="./assets/hobby-logo/figma.png" alt="profile-pic">
+                                </div>
+                            </div>
+                            <div class="crsl-body">
+                                <div class="title-text">
+                                    <h3>Figma</h3>
+                                    <p>Check my UI/UX Portfolios here!</p>
+                                </div> 
+                                <button class="btn btn-crsl" onclick="location.href='https://www.figma.com/@fauzanharlyanto';">
+                                    Add <i class="fab fa-figma"></i>
+                                </button>
+                            </div>
+                        </div>
+                        
+                    </div>
                 </div>
             </div>
-        </div>
-        <br>
-        <div class="socials"> <!--Facebook, Instagram, Twitter, Snapchat-->
-            <div class="container">
-                <h2>My Social Accounts!</h2>
-                <div class="container-header">
-                    <div class="ch-illustro" data-aos="fade-up-right" data-aos-delay="200">
-                        <img src="./assets/illustrations/illustro-social.png" alt="">
+        </a>
+        
+        <a id="contact">
+            <div class="socials"> <!--Facebook, Instagram, Twitter, Snapchat-->
+                <div class="container">
+                    <h2>My Social Accounts!</h2>
+                    <div class="container-header">
+                        <div class="ch-illustro" data-aos="fade-up-right" data-aos-delay="200">
+                            <img src="./assets/illustrations/illustro-social.png" alt="">
+                        </div>
+                        <div class="ch-text" data-aos="fade-up-left" data-aos-delay="200">
+                            <p>
+                                I also like to surfing social media. From funny memes to trending topics of the world, to communicate with my friend from another country. Social media is great
+                            </p>
+                        </div>
                     </div>
-                    <div class="ch-text" data-aos="fade-up-left" data-aos-delay="200">
-                        <p>
-                            I also like to surfing social media. From funny memes to trending topics of the world, to communicate with my friend from another country. Social media is great
-                        </p>
-                    </div>
-                </div>
-                
-                <div class="owl-carousel owl-theme crsl-acc">
-
-                    <div class="crsl-content" data-aos="flip-up" data-aos-delay="200"> <!--Facebook-->
-                        <div class="crsl-header">
-                            <div class="cover">
-                                <img src="./assets/socials/Facebook.png" alt="cover-pic">
+                    
+                    <div class="owl-carousel owl-theme crsl-acc">
+    
+                        <div class="crsl-content" data-aos="flip-up" data-aos-delay="200"> <!--Facebook-->
+                            <div class="crsl-header">
+                                <div class="cover">
+                                    <img src="./assets/socials/Facebook.png" alt="cover-pic">
+                                </div>
+                                <div class="profile">
+                                    <img src="./assets/profile-pic.png" alt="profile-pic">
+                                </div>
                             </div>
-                            <div class="profile">
-                                <img src="./assets/profile-pic.png" alt="profile-pic">
+                            <div class="crsl-body">
+                                <div class="title-text">
+                                    <h3>Facebook</h3>
+                                    <p>Follow me on this old-school social media!</p>
+                                </div> 
+                                <button class="btn btn-crsl"  onclick="location.href='https://www.facebook.com/fauzan.h.putra';">
+                                    Follow <i class="fab fa-facebook-square"></i>
+                                </button>
                             </div>
                         </div>
-                        <div class="crsl-body">
-                            <div class="title-text">
-                                <h3>Facebook</h3>
-                                <p>Follow me on this old-school social media!</p>
-                            </div> 
-                            <button class="btn btn-crsl"  onclick="location.href='https://www.facebook.com/fauzan.h.putra';">
-                                Follow <i class="fab fa-facebook-square"></i>
+                        <div class="crsl-content" data-aos="flip-up" data-aos-delay="200"> <!--Instagram-->
+                            <div class="crsl-header">
+                                <div class="cover">
+                                    <img src="./assets/socials/Instagram.png" alt="cover-pic">
+                                </div>
+                                <div class="profile">
+                                    <img src="./assets/profile-pic4.jpg" alt="profile-pic">
+                                </div>
+                            </div>
+                            <div class="crsl-body">
+                                <div class="title-text">
+                                    <h3>Instagram</h3>
+                                    <p>Follow me on this most-famous social media!</p>
+                                </div> 
+                                <button class="btn btn-crsl"  onclick="location.href='https://www.instagram.com/fauzan.harlyanto1/';">
+                                    Follow <i class="fab fa-instagram"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="crsl-content" data-aos="flip-up" data-aos-delay="200"> <!--Twitter-->
+                            <div class="crsl-header">
+                                <div class="cover">
+                                    <img src="./assets/socials/Twitter.png" alt="cover-pic">
+                                </div>
+                                <div class="profile">
+                                    <img src="./assets/profile-pic.png" alt="profile-pic">
+                                </div>
+                            </div>
+                            <div class="crsl-body">
+                                <div class="title-text">
+                                    <h3>Twitter</h3>
+                                    <p>Well, twitter! a follow would be sublime</p>
+                                </div> 
+                                <button class="btn btn-crsl"  onclick="location.href='https://twitter.com/Fauzanharlyanto';">
+                                    Follow <i class="fab fa-twitter"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="crsl-content" data-aos="flip-up" data-aos-delay="200"> <!--Snapchat-->
+                            <div class="crsl-header">
+                                <div class="cover">
+                                    <img src="./assets/socials/Snapchat.png" alt="cover-pic">
+                                </div>
+                                <div class="profile">
+                                    <img src="./assets/profile-pic3.png" alt="profile-pic">
+                                </div>
+                            </div>
+                            <div class="crsl-body">
+                                <div class="title-text">
+                                    <h3>Snapchat</h3>
+                                    <p>Add me and let's do streaks here!🔥🔥🔥</p>
+                                </div> 
+                            <button class="btn btn-crsl"  onclick="location.href='https://www.snapchat.com/add/f_harlyanto?share_id=xJXYO2VHPAU&locale=en-GB';">
+                                Add <i class="fab fa-snapchat"></i>
                             </button>
+                            </div>
                         </div>
+    
                     </div>
-                    <div class="crsl-content" data-aos="flip-up" data-aos-delay="200"> <!--Instagram-->
-                        <div class="crsl-header">
-                            <div class="cover">
-                                <img src="./assets/socials/Instagram.png" alt="cover-pic">
-                            </div>
-                            <div class="profile">
-                                <img src="./assets/profile-pic4.jpg" alt="profile-pic">
-                            </div>
-                        </div>
-                        <div class="crsl-body">
-                            <div class="title-text">
-                                <h3>Instagram</h3>
-                                <p>Follow me on this most-famous social media!</p>
-                            </div> 
-                            <button class="btn btn-crsl"  onclick="location.href='https://www.instagram.com/fauzan.harlyanto1/';">
-                                Follow <i class="fab fa-instagram"></i>
-                            </button>
-                        </div>
-                    </div>
-                    <div class="crsl-content" data-aos="flip-up" data-aos-delay="200"> <!--Twitter-->
-                        <div class="crsl-header">
-                            <div class="cover">
-                                <img src="./assets/socials/Twitter.png" alt="cover-pic">
-                            </div>
-                            <div class="profile">
-                                <img src="./assets/profile-pic.png" alt="profile-pic">
-                            </div>
-                        </div>
-                        <div class="crsl-body">
-                            <div class="title-text">
-                                <h3>Twitter</h3>
-                                <p>Well, twitter! a follow would be sublime</p>
-                            </div> 
-                            <button class="btn btn-crsl"  onclick="location.href='https://twitter.com/Fauzanharlyanto';">
-                                Follow <i class="fab fa-twitter"></i>
-                            </button>
-                        </div>
-                    </div>
-                    <div class="crsl-content" data-aos="flip-up" data-aos-delay="200"> <!--Snapchat-->
-                        <div class="crsl-header">
-                            <div class="cover">
-                                <img src="./assets/socials/Snapchat.png" alt="cover-pic">
-                            </div>
-                            <div class="profile">
-                                <img src="./assets/profile-pic3.png" alt="profile-pic">
-                            </div>
-                        </div>
-                        <div class="crsl-body">
-                            <div class="title-text">
-                                <h3>Snapchat</h3>
-                                <p>Add me and let's do streaks here!🔥🔥🔥</p>
-                            </div> 
-                        <button class="btn btn-crsl"  onclick="location.href='https://www.snapchat.com/add/f_harlyanto?share_id=xJXYO2VHPAU&locale=en-GB';">
-                            Add <i class="fab fa-snapchat"></i>
-                        </button>
-                        </div>
-                    </div>
-
                 </div>
             </div>
-        </div>
+        </a>
         
 
     </section>
@@ -287,7 +336,7 @@
     <!----- Footer ----->
         <div class="footer">
             <div class="container">
-                <div class="about-us" data-aos="fade-left" data-aos-delay="200">
+                <div class="about-us" data-aos="fade-down" data-aos-delay="200">
                     <h2>About LinkinBio</h2>
                     <p>
                         LinkinBio is a website to store another website links simply on instagram bio, This website is handcrafted by Fauzan Putra, including some fancy libraries such as "Animation on Scroll", "jQuery", and "Owl Carousel", Thanks for visiting this site. <br> -Fauzan Putra

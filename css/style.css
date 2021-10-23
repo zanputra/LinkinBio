@@ -28,9 +28,12 @@ html, body{
 
 /* ------ Global Classes ------ */
 
+ul{
+    list-style-type: none;
+}
+
 a{
     text-decoration: none;
-    color: white;
 }
 
 .flex-row{
@@ -52,6 +55,7 @@ h1{
 
 h2{
     font-family: var(--Quicksand);
+    font-size: 2rem;
 }
 
 p{
@@ -80,7 +84,7 @@ span{
     padding: 0 2rem;
 }
 
-main {
+body {
     background-image: url(../assets/Background-image.png), url(../assets/Background-image-2.png);
     background-position: top, bottom;
     background-repeat: no-repeat, no-repeat;
@@ -89,26 +93,66 @@ main {
 /* ------x Global Classes x------ */
 
 .nav{
-    background-color: rgb(14, 14, 14);
-    text-align: center;
-    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.425);
+    padding: 0 2rem;
     height: 0rem;
-    min-height: 7vh;
-    margin-top: 0;
+    min-height: 10vh;
+    overflow: hidden;
+    transition: .5s ease-in-out;
 }
 
-.nav .nav-brand a{
-    font-family: var(--Ubuntu);
+.nav .nav-menu{
     color: white;
-    font-size: 1.6rem;
+    justify-content: space-between;
+    top: 0;
+}
+
+.nav .nav-menu a{
+    color: white;
+}
+
+.nav .nav-menu .nav-items{
+    display: flex;
+}
+
+.nav .nav-menu .nav-items .nav-link{
+    font-family: var(--PT_Sans);
     padding: 1rem;
+    font-size: 1rem;
+    position: relative;
+}
+
+.nav .nav-menu .nav-logo a{
+    padding: 1rem;
+}
+
+.nav .nav-menu .nav-logo a{
+    font-family: var(--Quicksand);
+    font-size: 2rem;
     display: block;
 }
+
+.nav .nav-menu .nav-toggle{
+    position: absolute;
+    left: 90%;
+    padding: 2rem;
+    cursor: pointer;
+    display: none;
+}
+
+.nav .nav-menu .nav-toggle .toggle-icons i{
+    font-size: 1rem;
+}
+/* after click */
+.collapse{
+    height: 15rem;
+}
+
 
 /* header */
 .header{
     color: white;
-    padding: 0 10rem 10rem 10rem;
+    padding: 3rem 10rem 10rem 10rem;
     display: flex;
     justify-content: center;
     text-align: center;
@@ -119,12 +163,67 @@ main {
     font-size: 80px;
 }
 
+.header .header-title .under-name{
+    font-size: 50px;
+    color: rgba(255, 255, 255, 0.753);
+}
+
+.body-sec{
+    margin-top: 15vh;
+}
+
 .header .header-title p{
     margin-bottom: 1px;
     font-size: 30px;
 }
 
 /* header */
+
+/* about intro */
+
+.container-header .header-card .header-card-content{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 80%;
+    margin: 1rem 2rem;
+    box-shadow: 0 15px 20px rgba(0,0,0,0.5);
+    box-sizing: border-box;
+    background-color: white;
+    padding: 2rem;
+}
+
+.container-header .header-card .header-card-content img{
+    height: 250px;
+    width: 250px;
+    border-radius: 10rem;
+}
+
+.container-header .header-card .header-card-tech{
+    padding: 0 2rem;
+}
+
+.container-header .header-card .header-card-tech h2{
+    margin-bottom: 0;
+}
+
+.container-header .header-card .header-card-tech .tech {
+    justify-content: space-around;
+    padding: 2rem 0;
+}
+
+.container-header .header-card .header-card-tech .tech ul{
+    margin: 0;
+    padding: 0;
+}
+
+.container-header .header-card .header-card-tech .tech p{
+    text-align: left;
+    font-size: medium;
+    font-family: var(--Quicksand);
+}
+
+/* about intro */
 
 /* container header */
 
@@ -140,17 +239,6 @@ main {
 .container-header img{
     max-width: 500px;
     height: auto;
-}
-
-.container-header .header-img{
-    display: flex;
-    justify-content: center;
-}
-
-.container-header .header-img img{
-    height: 250px;
-    width: 250px;
-    border-radius: 10rem;
 }
 
 /* x container header x */
@@ -245,13 +333,30 @@ footer .footer .rights a{
 
 /* responsive */
 
-@media only screen and (max-width:750px){
+ @media only screen and (max-width:750px){
+
+    .nav .nav-menu, .nav .nav-menu .nav-items{
+        flex-direction: column;
+    }
+
+    .nav .nav-menu .nav-toggle{
+        display: initial;
+    }
+
     .header {
         display: flex;
         flex-direction: column;
         justify-content: center;
         padding: 2rem;
         margin-bottom: 20rem;
+    }
+
+    .header .header-title h1{
+        font-size: 2rem;
+    }
+
+    .header .header-title .h-title-text p{
+        font-size: 1rem;
     }
 
     .body-sec{
@@ -269,10 +374,15 @@ footer .footer .rights a{
         max-width: 90vw;
         height: auto;
     }
+
+    .ch-text{
+        padding: 2rem;
+    }
 }
 
 
 @media only screen and (max-width: 520px){
+
     .header {
         display: flex;
         flex-direction: column;
@@ -297,6 +407,10 @@ footer .footer .rights a{
     .container-header img{
         max-width: 90vw;
         height: auto;
+    }
+
+    .footer{
+        text-align: center;
     }
 }
 /* responsive */
