@@ -135,7 +135,7 @@ body {
 .nav .nav-menu .nav-toggle{
     position: absolute;
     left: 90%;
-    padding: 2rem;
+    padding: 2rem 0;
     cursor: pointer;
     display: none;
 }
@@ -355,6 +355,10 @@ footer .footer .rights a{
         font-size: 2rem;
     }
 
+    .header .header-title .under-name{
+        font-size: 2rem;
+    }
+
     .header .header-title .h-title-text p{
         font-size: 1rem;
     }
@@ -382,6 +386,10 @@ footer .footer .rights a{
 
 
 @media only screen and (max-width: 520px){
+
+    .header .header-title .under-name{
+        font-size: 1.5rem;
+    }
 
     .header {
         display: flex;

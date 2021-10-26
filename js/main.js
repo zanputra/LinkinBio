@@ -29,8 +29,7 @@ $(document).ready(function(){
         loop: true,
         // autoplay: true,
         // autoplayTimeout: 3000,
-        dots: false,
-        nav: false,
+        dots: true,
         responsive: responsive
     });
 
